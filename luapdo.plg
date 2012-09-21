@@ -1,0 +1,71 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: luapdo - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\zeropool\AppData\Local\Temp\RSP3D6F.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "./" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LUAPDO_EXPORTS" /FR"Release/" /Fp"Release/luapdo.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\lua\pdo\luapdo\luapdo.c"
+"E:\lua\pdo\luapdo\pdo_ado.cpp"
+"E:\lua\pdo\luapdo\pdo_mysql.c"
+"E:\lua\pdo\luapdo\pdo_sqlite3.c"
+"E:\lua\pdo\luapdo\sqlite3.c"
+]
+Creating command line "cl.exe @C:\Users\zeropool\AppData\Local\Temp\RSP3D6F.tmp" 
+<h3>Output Window</h3>
+Compiling...
+luapdo.c
+E:\lua\pdo\luapdo\luapdo.c(163) : warning C4003: not enough actual parameters for macro 'pthread_mutex_init'
+pdo_ado.cpp
+e:\lua\pdo\luapdo\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\comip.h(31) : warning C4042: '_IID' : has bad storage class
+        C:\Program Files (x86)\Microsoft Visual Studio\VC98\INCLUDE\comip.h(57) : see reference to class template instantiation '_com_IIID<struct _Command,&struct __s_GUID _GUID_b08400bd_f9d1_4d02_b856_71d5dba123e9>' being compiled
+        E:\lua\pdo\luapdo\pdo_ado.cpp(92) : see reference to class template instantiation '_com_ptr_t<class _com_IIID<struct _Command,&struct __s_GUID _GUID_b08400bd_f9d1_4d02_b856_71d5dba123e9> >' being compiled
+pdo_mysql.c
+E:\lua\pdo\luapdo\pdo_mysql.c(140) : warning C4133: 'function' : incompatible types - from 'int *' to 'const char *'
+E:\lua\pdo\luapdo\pdo_mysql.c(145) : warning C4133: 'function' : incompatible types - from 'int *' to 'const char *'
+E:\lua\pdo\luapdo\pdo_mysql.c(150) : warning C4133: 'function' : incompatible types - from 'int *' to 'const char *'
+E:\lua\pdo\luapdo\pdo_mysql.c(158) : warning C4090: 'function' : different 'const' qualifiers
+E:\lua\pdo\luapdo\pdo_mysql.c(158) : warning C4022: 'free' : pointer mismatch for actual parameter 1
+E:\lua\pdo\luapdo\pdo_mysql.c(167) : warning C4090: 'function' : different 'const' qualifiers
+E:\lua\pdo\luapdo\pdo_mysql.c(167) : warning C4024: 'strncpy' : different types for formal and actual parameter 1
+E:\lua\pdo\luapdo\pdo_mysql.c(260) : warning C4090: 'function' : different 'const' qualifiers
+E:\lua\pdo\luapdo\pdo_mysql.c(260) : warning C4024: 'strncpy' : different types for formal and actual parameter 1
+pdo_sqlite3.c
+E:\lua\pdo\luapdo\pdo_sqlite3.c(27) : warning C4090: 'function' : different 'const' qualifiers
+E:\lua\pdo\luapdo\pdo_sqlite3.c(27) : warning C4024: 'strncpy' : different types for formal and actual parameter 1
+E:\lua\pdo\luapdo\pdo_sqlite3.c(74) : warning C4090: 'function' : different 'const' qualifiers
+E:\lua\pdo\luapdo\pdo_sqlite3.c(74) : warning C4024: 'strncpy' : different types for formal and actual parameter 1
+sqlite3.c
+E:\lua\pdo\luapdo\sqlite3.c(65536) : warning C4049: compiler limit : terminating line number emission
+warning C4761: integral size mismatch in argument; conversion supplied
+warning C4761: integral size mismatch in argument; conversion supplied
+warning C4761: integral size mismatch in argument; conversion supplied
+Creating temporary file "C:\Users\zeropool\AppData\Local\Temp\RSP48F4.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/pdo.pdb" /machine:I386 /out:"out/pdo.dll" /implib:"Release/pdo.lib" 
+.\Release\luapdo.obj
+.\Release\pdo_ado.obj
+.\Release\pdo_mysql.obj
+.\Release\pdo_sqlite3.obj
+.\Release\sqlite3.obj
+]
+Creating command line "link.exe @C:\Users\zeropool\AppData\Local\Temp\RSP48F4.tmp"
+<h3>Output Window</h3>
+Linking...
+   Creating library Release/pdo.lib and object Release/pdo.exp
+Creating command line "bscmake.exe /nologo /o"Release/luapdo.bsc"  .\Release\luapdo.sbr .\Release\pdo_ado.sbr .\Release\pdo_mysql.sbr .\Release\pdo_sqlite3.sbr .\Release\sqlite3.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+pdo.dll - 0 error(s), 20 warning(s)
+</pre>
+</body>
+</html>
